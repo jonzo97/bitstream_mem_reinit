@@ -8,6 +8,8 @@ old/
 .sim/
 bigmem_test/
 .Xil/
+Xil/
+
 
 ### Linux ###
 *~
