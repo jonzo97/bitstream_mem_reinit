@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2.1 (64-bit)
+# SW Build 1957588 on Wed Aug  9 16:32:10 MDT 2017
+# IP Build 1948039 on Wed Aug  9 18:19:28 MDT 2017
+# Start of session at: Wed Aug 28 18:58:50 2019
+# Process ID: 12440
+# Current directory: /home/jonzo/bigmems
+# Command line: vivado -mode batch -source generate/generate.tcl -log designs/36k/vivado/logs/32kb1.log -journal designs/36k/vivado/logs/32kb1.jou
+# Log file: /home/jonzo/bigmems/designs/36k/vivado/logs/32kb1.log
+# Journal file: /home/jonzo/bigmems/designs/36k/vivado/logs/32kb1.jou
+#-----------------------------------------------------------
+source generate/generate.tcl

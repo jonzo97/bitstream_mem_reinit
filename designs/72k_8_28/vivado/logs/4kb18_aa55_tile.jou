@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2.1 (64-bit)
+# SW Build 1957588 on Wed Aug  9 16:32:10 MDT 2017
+# IP Build 1948039 on Wed Aug  9 18:19:28 MDT 2017
+# Start of session at: Wed Aug 28 18:57:06 2019
+# Process ID: 11868
+# Current directory: /home/jonzo/bigmems
+# Command line: vivado -mode batch -source generate/generate.tcl -log designs/72k_8_28/vivado/logs/4kb18_aa55_tile.log -journal designs/72k_8_28/vivado/logs/4kb18_aa55_tile.jou
+# Log file: /home/jonzo/bigmems/designs/72k_8_28/vivado/logs/4kb18_aa55_tile.log
+# Journal file: /home/jonzo/bigmems/designs/72k_8_28/vivado/logs/4kb18_aa55_tile.jou
+#-----------------------------------------------------------
+source generate/generate.tcl
