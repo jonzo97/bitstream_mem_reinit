@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ~/meminit/utils/init_setup.sh
+# source ~/meminit/utils/init_setup.sh
 
 BATCHDIR=($1)
 WIDTH=($2)
