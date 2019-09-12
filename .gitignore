@@ -9,6 +9,7 @@ old/
 bigmem_test/
 .Xil/
 Xil/
+old/
 
 
 ### Linux ###
@@ -167,6 +168,8 @@ dmypy.json
 !*.dependencies
 !*.mdd
 !*.fasm
+!*.init
+!*.mem
 
 ###########################################################################
 ##	VIVADO
