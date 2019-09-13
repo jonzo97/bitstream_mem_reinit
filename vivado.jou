@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2017.2.1 (64-bit)
+# SW Build 1957588 on Wed Aug  9 16:32:10 MDT 2017
+# IP Build 1948039 on Wed Aug  9 18:19:28 MDT 2017
+# Start of session at: Thu Sep 12 18:06:34 2019
+# Process ID: 30571
+# Current directory: /home/jonzo/bigmems
+# Command line: vivado
+# Log file: /home/jonzo/bigmems/vivado.log
+# Journal file: /home/jonzo/bigmems/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/jonzo/bigmems/bigmem_test/bigmem_test.xpr
+update_compile_order -fileset sources_1
+open_checkpoint designs/64k/vivado/logs/36_by_2k.jou
+close_project
+open_checkpoint designs/64k/vivado/reports/4_by_16k.dcp
+report_property mem/ram_reg_0
+report_property [get_cells mem/ram_reg_0]
+get_tiles
+get_tiles [get_cells mem/ram_reg_0]
+get_tiles -of [get_cells mem/ram_reg_0]
+get_bels -of [get_cells mem/ram_reg_0]
+get_tiles -of [get_bels -of [get_cells mem/ram_reg_0]]

@@ -5,6 +5,7 @@ import sys
 class Cell:
     def __init__(self, cell):
         self.type = cell['CELLTYPE']
+        self.tile = cell['TILE']
         self.placement = cell['CELLPLACEMENT'].split('_')[1]
         self.write_style = cell['MEM.PORTA.DATA_BIT_LAYOUT']
         self.pbits = int(cell['MEM.PORTA.DATA_BIT_LAYOUT'].split('_')[0][1:])

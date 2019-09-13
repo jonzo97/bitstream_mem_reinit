@@ -35,8 +35,11 @@ proc mddMake {fname} {
 
 
     foreach c [get_cells -filter {REF_NAME == "RAMB18E1" || REF_NAME == "RAMB36E1"}] {
-        puts "\nCell $c"
+        puts "\nCELL $c"
         puts $fp "\nCELL $c"
+        set tileaddr [get_tiles -of [get_bels -of $c]]
+        puts "\n\tTILE $tileaddr"
+        puts $fp "\n\tTILE $tileaddr"
         foreach p $props {
             set val [get_property [lindex $p 1] $c]
             if { $val == ""} { set val "NONE" }
