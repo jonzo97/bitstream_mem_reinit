@@ -72,7 +72,8 @@ def edif_celldata_to_fasm_initlines(mdd):
         y0_initp = split_into_lines(cell.INITP[1::2])
         tiledata = {'Y0': {'INIT': y0_init, 'INITP': y0_initp},
                     'Y1': {'INIT': y1_init, 'INITP': y1_initp}}
-        tileaddr = convert_placement(cell.placement)
+        tileaddr = cell.tile
+        # tileaddr = convert_placement(cell.placement)
         # tileaddr = f'BRAM_L_{cell.placement}'
         tiles[tileaddr] = tiledata
     return tiles
