@@ -1,6 +1,7 @@
 
 import utils.parseutil.parse_mdd as mddutil
 import utils.parseutil.fasmread as fasmutil
+import fasm
 # from collections import recordclass
 
 
@@ -72,7 +73,8 @@ def edif_celldata_to_fasm_initlines(mdd):
         y0_initp = split_into_lines(cell.INITP[1::2])
         tiledata = {'Y0': {'INIT': y0_init, 'INITP': y0_initp},
                     'Y1': {'INIT': y1_init, 'INITP': y1_initp}}
-        tileaddr = convert_placement(cell.placement)
+        tileaddr = cell.tile
+        # tileaddr = convert_placement(cell.placement)
         # tileaddr = f'BRAM_L_{cell.placement}'
         tiles[tileaddr] = tiledata
     return tiles
@@ -90,14 +92,18 @@ def initlines_to_memfasm(initlines, infile_name):
                         #     f'{line_header}{count:02X}[255:0] = 256\'b{data}')
                     fasmlines.append(
                         f'{line_header}{count:02X}[255:0] = 256\'b{data}')
-                    print(f'{line_header}{count:02X}[255:0] = 256\'b{data}')
-            print()
-        print()
+        #             print(f'{line_header}{count:02X}[255:0] = 256\'b{data}')
+        #     print()
+        # print()
     with open(f'{infile_name.split(".")[0]}_check.txt', 'w+') as w:
         for line in fasmlines:
             w.write(f'{line}\n')
             # print(line)
-    return fasmlines
+    memfasm = (next(fasm.parse_fasm_string(line)) for line in fasmlines)
+    # for mf in memfasm:
+        # print(type(mf))
+        # print(next(fasm.fasm_line_to_string(mf)))
+    return memfasm
 
 
 def initfile_to_memfasm(infile, fasm_tups, memfasm_name, mdd):

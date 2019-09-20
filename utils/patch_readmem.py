@@ -28,6 +28,11 @@ def main():
         fasm_tups=fasm_tups,
         memfasm_name='temp_mem.fasm',
         mdd=mdd_data)
+    merged=merge_tuples(cleared_tups, memfasm)
+    write_fasm(outfile, merged)
+    #nannkasuru
+
+    write_fasm(outfile, memfasm)
     # memfasm = initutil.initfile_to_memfasm(
     #     infile=new_init,
     #     fasm_tups=fasm_tups,

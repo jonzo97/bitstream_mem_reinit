@@ -6,7 +6,7 @@
 <Project Version="7" Minor="20" Path="/home/jonzo/bigmems/bigmem_test/bigmem_test.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="fa73a45d55b34fc9bd2ba4826d69c175"/>
+    <Option Name="Id" Val="452cf90c203b47d78b913d66b738b547"/>
     <Option Name="Part" Val="xc7a50tfgg484-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -50,7 +50,7 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../designs/9_12_mdd_tiletest/vivado/verilog/64kb1.sv">
+      <File Path="$PPRDIR/../test/vivado/verilog/8kb18.sv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
