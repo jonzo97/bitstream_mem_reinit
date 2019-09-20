@@ -101,8 +101,8 @@ def initlines_to_memfasm(initlines, infile_name):
             # print(line)
     memfasm = (next(fasm.parse_fasm_string(line)) for line in fasmlines)
     # for mf in memfasm:
-        # print(type(mf))
-        # print(next(fasm.fasm_line_to_string(mf)))
+    # print(type(mf))
+    # print(next(fasm.fasm_line_to_string(mf)))
     return memfasm
 
 
